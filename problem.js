@@ -4,7 +4,6 @@
 
 const dataCache = new Map();
 
-
 const expensiveTask =(id)=>{
 console.log("Run the expensive task for:", id);
 
@@ -22,6 +21,7 @@ const getData = (id)=>{
     dataCache.set(id, data);
     return data;
 }
+
 console.log(dataCache);
 console.log(getData(123));
 console.log(getData(123));
